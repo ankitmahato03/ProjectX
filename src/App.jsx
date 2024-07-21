@@ -1,23 +1,35 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { AuroraBackground } from "./components/ui/aurora-background";
+import { FloatingNav } from "./components/ui/floating-navbar";
+import Hero from "./components/Hero";
+import OurExpertise from "./components/OurExpertise";
+import PromoCard from "./components/PromoCard";
 
 const App = () => {
+  const navItems = [
+    {
+      name: "Expertise",
+      link: "#",
+    },
+    {
+      name: "Team",
+      link: "#",
+    },
+    {
+      name: "Projects",
+      link: "#",
+    },
+    {
+      name: "About Us",
+      link: "#",
+    },
+  ];
   return (
-    <AuroraBackground>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
-      >
-        Hello
-      </motion.div>
-    </AuroraBackground>
+    <>
+      <FloatingNav navItems={navItems} />
+      <Hero />
+      <PromoCard />
+      <OurExpertise />
+    </>
   );
 };
 
