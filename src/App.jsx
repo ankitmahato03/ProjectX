@@ -3,6 +3,8 @@ import { FloatingNav } from "./components/ui/floating-navbar";
 import Hero from "./components/Hero";
 import OurExpertise from "./components/OurExpertise";
 import PromoCard from "./components/PromoCard";
+import OurTeam from "./components/OurTeam";
+import OurProject from "./components/OurProject";
 
 const App = () => {
   const navItems = [
@@ -29,6 +31,8 @@ const App = () => {
       <Hero />
       <PromoCard />
       <OurExpertise />
+      <OurTeam />
+      <OurProject />
     </>
   );
 };
