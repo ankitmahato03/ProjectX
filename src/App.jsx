@@ -5,6 +5,7 @@ import PromoCard from "./components/PromoCard";
 import OurTeam from "./components/OurTeam";
 import OurProject from "./components/OurProject";
 import ClientReview from "./components/ClientReview";
+import Contact from "./components/Contact";
 
 const App = () => {
   const navItems = [
@@ -34,6 +35,7 @@ const App = () => {
       <OurTeam />
       <OurProject />
       <ClientReview />
+      <Contact />
     </>
   );
 };
