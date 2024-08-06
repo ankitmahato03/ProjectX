@@ -6,6 +6,7 @@ import OurTeam from "./components/OurTeam";
 import OurProject from "./components/OurProject";
 import ClientReview from "./components/ClientReview";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const navItems = [
@@ -36,6 +37,7 @@ const App = () => {
       <OurProject />
       <ClientReview />
       <Contact />
+      <Footer />
     </>
   );
 };

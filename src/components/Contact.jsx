@@ -1,30 +1,28 @@
-import React from 'react';
-
 const ContactForm = () => {
   return (
     <div id="contact" className="px-10 py-20 bg-gray-100">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <h1 className="text-3xl font-bold text-blue-500 mb-6">Contact Us</h1>
+            <h1 className="text-3xl font-bold text-teal-500 mb-6">Contact Us</h1>
             <p className="flex items-center mb-4">
-              <i className="fas fa-envelope text-blue-500 text-lg mr-2"></i>
+              <i className="fas fa-envelope text-teal-500 text-lg mr-2"></i>
               help@gmail.com
             </p>
             <p className="flex items-center mb-4">
-              <i className="fas fa-phone-square-alt text-blue-500 text-lg mr-2"></i>
+              <i className="fas fa-phone-square-alt text-teal-500 text-lg mr-2"></i>
               8016525211
             </p>
             <div className="social-icons mt-6">
               <a
                 href="https://twitter.com/ankit__mahato?t=iJMXkBmFJa5FH_b8bbeHlQ&s=08"
-                className="text-blue-500 text-2xl mr-4 hover:text-pink-500 transition duration-500 transform hover:translate-y-1"
+                className="text-teal-500 text-2xl mr-4 hover:text-pink-500 transition duration-500 transform hover:translate-y-1"
               >
                 <i className="fab fa-twitter-square"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/ankit-m-8a4466213/"
-                className="text-blue-500 text-2xl hover:text-pink-500 transition duration-500 transform hover:translate-y-1"
+                className="text-teal-500 text-2xl hover:text-pink-500 transition duration-500 transform hover:translate-y-1"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
@@ -54,7 +52,7 @@ const ContactForm = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full py-3 bg-teal-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Submit
               </button>
