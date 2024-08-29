@@ -1,5 +1,5 @@
-import React from 'react'
-import { CardBody, CardContainer, CardItem } from './ui/3d-card';
+import React from "react";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const data = [
   {
@@ -30,37 +30,38 @@ const data = [
 
 const OurProject = () => {
   return (
-    <div className="h-full flex flex-col items-center bg-slate-100 pb-3">
-      <div className="text-neutral-900  flex flex-col justify-center items-center max-w-xl mt-6 mb-4">
-        <h3 className=" font-bold text-4xl">Projects</h3>
-        <p className="text-center py-2">
+    <div
+      id="Projects"
+      className="h-full flex flex-col items-center bg-slate-100 dark:bg-neutral-900 pb-6"
+    >
+      <div className="text-neutral-900 dark:text-neutral-100 flex flex-col justify-center items-center max-w-xl mt-8 mb-6">
+        <h3 className="font-bold text-3xl sm:text-4xl">Projects</h3>
+        <p className="text-center text-neutral-700 dark:text-neutral-300 py-2">
           Building a next-generation collaborative platform to connect renters,
           homeowners, and agents.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-0">
-        {data.map((item) => (
-          <CardContainer className="inter-var">
-            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] mx-3 h-auto rounded-xl p-6 border">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6">
+        {data.map((item, index) => (
+          <CardContainer className="inter-var" key={index}>
+            <CardBody className="bg-gray-50 dark:bg-neutral-800 dark:border-neutral-700 border-gray-200 w-full sm:w-[20rem] mx-auto h-full rounded-xl p-6 border shadow-md dark:shadow-none hover:shadow-lg transition-shadow">
               <CardItem translateZ="100" className="w-full mb-4 flex">
                 <img
                   src={item.image}
-                  height="1000"
-                  width="1000"
-                  className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                  className="h-40 w-full object-cover rounded-xl"
                   alt="thumbnail"
                 />
               </CardItem>
               <CardItem
                 translateZ="50"
-                className="text-lg font-bold text-neutral-600 dark:text-white"
+                className="text-lg font-bold text-neutral-700 dark:text-neutral-100"
               >
                 {item.title}
               </CardItem>
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-xs mt-2 dark:text-neutral-300"
+                className="text-neutral-600 dark:text-neutral-300 text-sm mt-2"
               >
                 {item.description}
               </CardItem>
@@ -80,6 +81,6 @@ const OurProject = () => {
       </div>
     </div>
   );
-}
+};
 
-export default OurProject
+export default OurProject;

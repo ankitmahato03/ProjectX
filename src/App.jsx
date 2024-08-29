@@ -7,29 +7,30 @@ import OurProject from "./components/OurProject";
 import ClientReview from "./components/ClientReview";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  const navItems = [
-    {
-      name: "Expertise",
-      link: "#",
-    },
-    {
-      name: "Team",
-      link: "#",
-    },
-    {
-      name: "Projects",
-      link: "#",
-    },
-    {
-      name: "About Us",
-      link: "#",
-    },
-  ];
+  // const navItems = [
+  //   {
+  //     name: "Expertise",
+  //     link: "#",
+  //   },
+  //   {
+  //     name: "Team",
+  //     link: "#",
+  //   },
+  //   {
+  //     name: "Projects",
+  //     link: "#",
+  //   },
+  //   {
+  //     name: "About Us",
+  //     link: "#",
+  //   },
+  // ];
   return (
     <>
-      <FloatingNav navItems={navItems} />
+      <Navbar />
       <Hero />
       <PromoCard />
       <OurExpertise />
