@@ -43,8 +43,8 @@ const ClientReview = () => {
       </div>
 
       <div className="text-center">
-        <h2 className="text-xl font-semibold mb-6">What clients say</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h1 className="text-xl font-semibold mb-6">What clients say</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {clientReview.map((client) => (
             <div
               key={client.id}
