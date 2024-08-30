@@ -12,26 +12,26 @@ const navItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-const [shadow, setShadow] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
-useEffect(() => {
+  useEffect(() => {
     const handleShadow = () => {
-        if (window.scrollY > 20) {
-            setShadow(true);
-        } else{
-            setShadow(false);
-        }
+      if (window.scrollY > 20) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
     };
     window.addEventListener("scroll", handleShadow);
-}, []);
+  }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-transparent backdrop-blur-lg text-black transition-all duration-300 z-[50] ${
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] bg-white bg-opacity-60 backdrop-blur-lg text-black transition-all duration-300 z-[50] ${
         shadow ? "shadow-lg" : ""
-      } px-5`}
+      } px-5 py-3 rounded-[20px]`} // Ensuring the Navbar is centered and not clipped
     >
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className="container mx-auto flex justify-between items-center">
         <Link to="Home" duration={500} smooth={true}>
           <h1 className="text-2xl font-bold cursor-pointer">
             Steiner.<span className="text-teal-400">io</span>
@@ -62,7 +62,7 @@ useEffect(() => {
       <div
         className={`fixed min-h-screen top-0 right-0 w-3/4 bg-gray-900 text-white md:hidden transform z-[99] ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out`}
+        } transition-transform duration-300 ease-in-out rounded-l-[20px]`}
       >
         <div className="flex justify-end p-4">
           <button

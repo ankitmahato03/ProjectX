@@ -94,7 +94,7 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-700" />
       <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
-        <p className="text-sm">&copy; 2024. All Rights Reserved.</p>
+        <p className="text-sm"> ProjectX &copy; 2024. All Rights Reserved.</p>
         <div className="flex space-x-4">
           <a href="#facebook" className="text-gray-400 hover:text-gray-300">
             <FaFacebook size={25} />

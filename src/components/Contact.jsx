@@ -19,13 +19,13 @@ const ContactForm = () => {
             </p>
             <div className="social-icons mt-6">
               <a
-                href="https://twitter.com/ankit__mahato?t=iJMXkBmFJa5FH_b8bbeHlQ&s=08"
+                href="https://twitter.com"
                 className="text-black dark:text-white text-2xl mr-4 hover:text-gray-600 dark:hover:text-gray-400 transition duration-500 transform hover:translate-y-1"
               >
                 <i className="fab fa-twitter-square"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/ankit-m-8a4466213/"
+                href="https://www.linkedin.com"
                 className="text-black dark:text-white text-2xl hover:text-gray-600 dark:hover:text-gray-400 transition duration-500 transform hover:translate-y-1"
               >
                 <i className="fab fa-linkedin"></i>
