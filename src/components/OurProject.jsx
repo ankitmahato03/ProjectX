@@ -1,32 +1,6 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-
-const data = [
-  {
-    title: "Erlebniswelt Roggen Erschmatt",
-    description:
-      "Transform your projects with our project management services. Expert solutions for efficient delivery and optimized results.",
-    image: "https://images.pexels.com/photos/2341112/pexels-photo-2341112.jpeg",
-  },
-  {
-    title: "Leuk Tourismus",
-    description:
-      "Get the right technology solutions for your business. Our Expert consultants provide tailored advice and optimized results.",
-    image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
-  },
-  {
-    title: "SPOTZ",
-    description:
-      "Get the right technology solutions for your business. Our Expert consultants provide tailored advice and optimized results.",
-    image: "https://images.pexels.com/photos/8516356/pexels-photo-8516356.jpeg",
-  },
-  {
-    title: "Leuk Tourismus",
-    description:
-      "Get the right technology solutions for your business. Our Expert consultants provide tailored advice and optimized results.",
-    image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
-  },
-];
+import itemsData from "../data/ourProject.json";
 
 const OurProject = () => {
   return (
@@ -42,7 +16,7 @@ const OurProject = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6">
-        {data.map((item, index) => (
+        {itemsData.data.map((item, index) => (
           <CardContainer className="inter-var" key={index}>
             <CardBody className="bg-gray-50 dark:bg-neutral-800 dark:border-neutral-700 border-gray-200 w-full sm:w-[20rem] mx-auto h-full rounded-xl p-6 border shadow-md dark:shadow-none hover:shadow-lg transition-shadow">
               <CardItem translateZ="100" className="w-full mb-4 flex">

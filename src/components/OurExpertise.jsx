@@ -1,26 +1,7 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import itemsData from "../data/ourExpertise.json";
 
-const items = [
-  {
-    title: "Consulting",
-    description:
-      "Get the right technology solutions for your business. Our expert consultants provide tailored advice and optimized results.",
-    png: "/pngs/consulting-png.png",
-  },
-  {
-    title: "Project Management",
-    description:
-      "Transform your project with our project management services. Expert solutions for efficient delivery and optimized results.",
-    png: "/pngs/project-management.png",
-  },
-  {
-    title: "Software Engineering",
-    description:
-      "Build software that solves your biggest business challenges. Our expert engineers will craft tailored solutions to help you succeed.",
-    png: "/pngs/software-engineering.png",
-  },
-];
 
 const OurExpertise = () => {
   return (
@@ -38,9 +19,9 @@ const OurExpertise = () => {
         </p>
       </div>
       <BentoGrid className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {items.map((item, i) => (
+        {itemsData.items.map((item, index) => (
           <BentoGridItem
-            key={i}
+            key={index}
             title={item.title}
             description={item.description}
             png={item.png}
