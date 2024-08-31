@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="Home" duration={500} smooth={true}>
           <h1 className="text-2xl font-bold cursor-pointer">
-            Steiner.<span className="text-teal-400">io</span>
+            OC<span className="text-teal-400">tech</span>
           </h1>
         </Link>
         <div className="hidden md:flex space-x-8">
