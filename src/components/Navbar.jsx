@@ -3,10 +3,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const navItems = [
+  { name: "Home", link: "Home" },
   { name: "Expertise", link: "Expertise" },
   { name: "Team", link: "Team" },
   { name: "Projects", link: "Projects" },
-  { name: "Client Review", link: "ClientReview" },
   { name: "Contact Us", link: "Contact" },
 ];
 
