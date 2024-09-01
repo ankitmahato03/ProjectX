@@ -9,7 +9,7 @@ const OurProject = () => {
       className="h-full flex flex-col items-center bg-slate-100 dark:bg-neutral-900 pb-6"
     >
       <div className="text-neutral-900 dark:text-neutral-100 flex flex-col justify-center items-center max-w-xl mt-8 mb-6">
-        <h3 className="font-bold text-3xl sm:text-4xl">Projects</h3>
+        <h3 className="font-bold text-3xl sm:text-4xl">Recent Projects</h3>
         <p className="text-center text-neutral-700 dark:text-neutral-300 py-2">
           Building a next-generation collaborative platform to connect renters,
           homeowners, and agents.
