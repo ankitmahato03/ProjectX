@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div id="Contact" className="px-10 py-20 bg-gray-100 dark:bg-gray-900">
+    <div id="Contact" className="px-10 lg:px-32 py-20 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-8 md:mb-0">

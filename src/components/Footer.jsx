@@ -12,17 +12,22 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 px-6">
       <div className="mx-auto md:ml-20 md:mr-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Company Information */}
         <div>
-          <div className="mb-4">
-            <h1 className="text-2xl font-bold font-mono">
-              OC<span className="text-gray-400">tech</span>
-            </h1>
-          </div>
+          <h1 className="text-2xl font-bold font-mono mb-4">
+            OC<span className="text-gray-400">tech</span>
+          </h1>
           <p className="text-sm text-gray-300">
             Lorem ipsum dolor sit amet consectetur. Suspendisse dictumst turpis
             consequat libero eget turpis at mauris integer.
           </p>
+          <div className="flex gap-3 mt-8">
+            <img src="/pngs/msme1.jpg" alt="msme certified" width='80px' className="rounded"/>
+            <img src="/pngs/msme2.jpg" alt="iso certified" width='80px' className="rounded"/>
+          </div>
         </div>
+
+        {/* Useful Links */}
         <div>
           <h3 className="mb-2 font-bold text-gray-400">Useful Links</h3>
           <ul className="space-y-2 text-gray-200 text-sm">
@@ -48,27 +53,51 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
+        {/* Contact Information & Newsletter */}
         <div>
-          <h3 className="mb-2 font-bold text-gray-400">Get In Touch</h3>
-          <ul className="space-y-2 text-gray-200 text-sm">
-            <li className="flex gap-2 items-center">
-              <MdLocationOn size={25} className="text-gray-400" />
-              India , kol street 78 , India
-            </li>
-            <li className="flex gap-2 items-center">
-              <FaPhoneAlt size={25} className="text-gray-400" />
-              0208 993 4500
-            </li>
-            <li className="flex gap-2 items-center">
-              <MdEmail size={25} className="text-gray-400" />
-              info@steiner.io
-            </li>
-          </ul>
+          <div className="mb-4">
+            <h3 className="mb-2 font-bold text-gray-400">Get In Touch</h3>
+            <ul className="space-y-2 text-gray-200 text-sm">
+              <li className="flex gap-2 items-center">
+                <MdLocationOn size={25} className="text-gray-400" />
+                India, Kol Street 78, India
+              </li>
+              <li className="flex gap-2 items-center">
+                <FaPhoneAlt size={25} className="text-gray-400" />
+                0208 993 4500
+              </li>
+              <li className="flex gap-2 items-center">
+                <MdEmail size={25} className="text-gray-400" />
+                info@steiner.io
+              </li>
+            </ul>
+          </div>
+          {/* Newsletter Form */}
+          <div className="newsletter-container text-white">
+            <h2 className="font-bold mb-2 text-gray-400">Newsletter</h2>
+            <p className="text-sm mb-4">Get the latest update</p>
+            <form className="flex overflow-hidden rounded-full relative">
+              <input
+                type="email"
+                className="newsletter-input px-4 py-2 outline-none flex-grow bg-white text-black placeholder-gray-500"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                className="newsletter-button bg-teal-600 hover:bg-teal-700 hover:scale-110 duration-300 text-white px-4 py-2 absolute right-0.5 top-0.5 rounded-full text-sm"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+
+      {/* Footer Bottom Section */}
       <hr className="my-6 border-gray-700" />
       <div className="flex flex-col gap-5 md:flex-row justify-between items-center">
-        <p className="text-sm"> ProjectX &copy; 2018. All Rights Reserved.</p>
+        <p className="text-sm">OCtech &copy; 2018 | All Rights Reserved.</p>
         <div className="flex space-x-4">
           <a href="#facebook" className="text-gray-400 hover:text-gray-300">
             <FaFacebook size={25} />
