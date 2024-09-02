@@ -33,6 +33,11 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-200 text-sm">
             <li>
               <a href="#terms" className="hover:text-gray-400">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#terms" className="hover:text-gray-400">
                 Terms & Conditions
               </a>
             </li>
@@ -44,11 +49,6 @@ const Footer = () => {
             <li>
               <a href="#refund" className="hover:text-gray-400">
                 Refund Policy
-              </a>
-            </li>
-            <li>
-              <a href="#cookies" className="hover:text-gray-400">
-                Cookies Policy
               </a>
             </li>
           </ul>
@@ -64,7 +64,7 @@ const Footer = () => {
                 India, Kol Street 78, India
               </li>
               <li className="flex gap-2 items-center">
-                <FaPhoneAlt size={25} className="text-gray-400" />
+                <FaPhoneAlt size={20} className="text-gray-400" />
                 0208 993 4500
               </li>
               <li className="flex gap-2 items-center">
@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* Newsletter Form */}
-          <div className="newsletter-container text-white">
+          <div className="container text-white">
             <h2 className="font-bold mb-2 text-gray-400">Newsletter</h2>
             <p className="text-sm mb-4">Get the latest update</p>
             <form className="flex overflow-hidden rounded-full relative">
