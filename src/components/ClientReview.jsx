@@ -11,20 +11,8 @@ export default function ClientReview() {
       id="ClientReview"
       className="bg-neutral-200 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 p-10 h-full"
     >
-      <div className="text-center mb-10 border-4 border-black dark:border-gray-700 rounded-xl py-10 max-w-xl mx-auto">
-        <p className="text-3xl font-bold mb-2">
-          “Keep it simple, stupid (KISS)”
-        </p>
-        <p className="text-gray-500 dark:text-gray-400 mb-4">
-          KISS-Prinzip von Ockhams Rasiermesser
-        </p>
-        <button className="mt-4 px-6 py-2 bg-slate-800 rounded-full text-white hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 transition-colors">
-          Contact Us
-        </button>
-      </div>
-      <hr className="border-t shadow-xl border-gray-600 my-10" />
       <div className="text-center">
-        <h1 className="text-xl font-bold mb-3">Customer Reflections</h1>
+        <h1 className="text-4xl font-bold mb-3">Customer Reflections</h1>
         <h1 className="text-base">
           Learn what our customers appreciate about our service.
         </h1>

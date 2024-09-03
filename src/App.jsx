@@ -8,6 +8,7 @@ const ClientReview = lazy(() => import('./components/ClientReview'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 const Workflow = lazy(() => import('./components/Workflow'));
+import AboutUs from "./components/AboutUs";
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
+      <AboutUs />
       <Suspense fallback={<div>Loading...</div>}>
         <OurExpertise />
       </Suspense>

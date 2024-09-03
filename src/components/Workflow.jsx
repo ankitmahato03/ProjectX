@@ -26,14 +26,15 @@ const Workflow = () => {
 
   return (
     <div className="text-center py-16 bg-white">
-      <h2 className="text-black font-semibold text-lg mb-2">
+      <h2 className="text-black font-bold text-4xl">
         Work Process
       </h2>
-      <h3 className="text-3xl font-bold mb-8">How to work it</h3>
-      <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
-        Dcidunt eget semper nec quam. Sed hendrerit, acfelis Nunc egestas augue
-        atpellentesque laoreet morbi ac felis Nunc
-      </p>
+      {/* <h3 className="text-3xl font-bold">How to work it</h3> */}
+      <div className="text-center mb-10 py-5 max-w-xl mx-auto">
+        <p className="text-3xl italic mb-2">
+          “Keep it simple, stupid (KISS)”
+        </p>
+      </div>
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 max-w-5xl mx-auto">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center">
