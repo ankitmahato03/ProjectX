@@ -17,14 +17,14 @@ const OurExpertise = () => {
           homeowners, and agents.
         </p>
       </div>
-      <BentoGrid className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <BentoGrid className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6">
         {itemsData.items.map((item, index) => (
           <BentoGridItem
             key={index}
             title={item.title}
             description={item.description}
             png={item.png}
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6"
+            className="bg-[#CAF0F8] hover:bg-gradient-to-r from-blue-200 to-cyan-200 dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6"
           />
         ))}
       </BentoGrid>

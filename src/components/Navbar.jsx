@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 
 const navItems = [
   { name: "Home", link: "Home" },
+  { name: "About Us", link: "About" },
   { name: "Expertise", link: "Expertise" },
   { name: "Projects", link: "Projects" },
-  { name: "About Us", link: "About" },
   { name: "Team", link: "Team" },
   { name: "Contact Us", link: "Contact" },
 ];
@@ -33,7 +33,7 @@ const Navbar = () => {
       } px-5 py-3 rounded-[20px]`} // Ensuring the Navbar is centered and not clipped
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="Home" duration={500} smooth={true}>
+        <Link to="Home" duration={800} smooth={true}>
           <h1 className="text-2xl font-bold cursor-pointer">
             OC<span className="text-teal-400">tech</span>
           </h1>
