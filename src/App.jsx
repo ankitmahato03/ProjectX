@@ -1,12 +1,14 @@
 import Hero from "./components/Hero";
-import OurExpertise from "./components/OurExpertise";
-import OurTeam from "./components/OurTeam";
-import OurProject from "./components/OurProject";
-import ClientReview from "./components/ClientReview";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Workflow from "./components/Workflow";
+import { lazy } from "react";
+const OurTeam = lazy(() => import('./components/OurTeam'));
+const OurExpertise = lazy(() => import('./components/OurExpertise'));
+const OurProject = lazy(() => import('./components/OurProject'));
+const ClientReview = lazy(() => import('./components/ClientReview'));
+const Contact = lazy(() => import('./components/Contact'));
+const Footer = lazy(() => import('./components/Footer'));
+const Workflow = lazy(() => import('./components/Workflow'));
+
 
 const App = () => {
   return (

@@ -4,10 +4,10 @@ import { Link } from "react-scroll";
 
 const navItems = [
   { name: "Home", link: "Home" },
-  { name: "About Us", link: "About" },
   { name: "Expertise", link: "Expertise" },
-  { name: "Team", link: "Team" },
   { name: "Projects", link: "Projects" },
+  { name: "About Us", link: "About" },
+  { name: "Team", link: "Team" },
   { name: "Contact Us", link: "Contact" },
 ];
 
