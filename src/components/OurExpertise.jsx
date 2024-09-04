@@ -24,7 +24,7 @@ const OurExpertise = () => {
             title={item.title}
             description={item.description}
             png={item.png}
-            className="bg-[#CAF0F8] hover:bg-gradient-to-r from-blue-200 to-cyan-200 dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6"
+            className="bg-[#F6EACB] hover:bg-[#F1D3CE] dark:bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6"
           />
         ))}
       </BentoGrid>

@@ -1,7 +1,6 @@
 import{ useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link as A } from "react-scroll";
-import { Link } from "react-router-dom";
 
 const navItems = [
   { name: "Home", link: "Home" },
@@ -27,6 +26,9 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  console.log('window location: ', window.location.pathname);//Todo: remove this line
+  
+
   return (
     <nav
       className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] bg-white bg-opacity-60 backdrop-blur-lg text-black transition-all duration-300 z-[50] ${
@@ -34,11 +36,11 @@ const Navbar = () => {
       } px-5 py-3 rounded-[20px]`} // Ensuring the Navbar is centered and not clipped
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/">
+        <A to="Home" smooth={true} duration={500}>
           <h1 className="text-2xl font-bold cursor-pointer">
             OC<span className="text-teal-400">tech</span>
           </h1>
-        </Link>
+        </A>
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, index) => (
             <A

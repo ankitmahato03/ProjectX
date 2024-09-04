@@ -21,7 +21,7 @@ export const BentoGridItem = ({ className, title, description, png }) => {
         className,
       )}
     >
-      <div className="flex justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
+      <div className="flex justify-center items-center w-full h-full min-h-[6rem] rounded-xl bg-white dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
         <img src={png} className="h-3/4" />
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">

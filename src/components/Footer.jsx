@@ -7,7 +7,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,19 +32,19 @@ const Footer = () => {
           <h3 className="mb-2 font-bold text-gray-400">Useful Links</h3>
           <ul className="space-y-2 text-gray-200 text-sm">
             <li>
-              <Link to='/about' className="hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400">
                 About Us
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='/terms' className="hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400">
                 Terms & Conditions
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to='/policy' className="hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400">
                 Privacy Policy
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
