@@ -1,6 +1,7 @@
 import{ useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link as A } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const navItems = [
   { name: "Home", link: "Home" },
@@ -33,14 +34,14 @@ const Navbar = () => {
       } px-5 py-3 rounded-[20px]`} // Ensuring the Navbar is centered and not clipped
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="Home" duration={800} smooth={true}>
+        <Link to="/">
           <h1 className="text-2xl font-bold cursor-pointer">
             OC<span className="text-teal-400">tech</span>
           </h1>
         </Link>
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, index) => (
-            <Link
+            <A
               key={index}
               to={item.link}
               smooth={true}
@@ -48,7 +49,7 @@ const Navbar = () => {
               className="hover:text-teal-400 transition-colors duration-300 cursor-pointer"
             >
               {item.name}
-            </Link>
+            </A>
           ))}
         </div>
         <div className="md:hidden flex items-center">
@@ -75,14 +76,14 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col items-center mt-10 space-y-6">
           {navItems.map((item, index) => (
-            <Link
+            <A
               key={index}
               to={item.link}
               className="text-lg hover:text-teal-400 transition-colors duration-300"
               onClick={() => setIsOpen(false)}
             >
               {item.name}
-            </Link>
+            </A>
           ))}
         </div>
       </div>
