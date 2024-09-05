@@ -24,6 +24,7 @@ const OurProject = () => {
                   src={item.image}
                   className="h-40 w-full object-cover rounded-xl"
                   alt="thumbnail"
+                  loading="lazy"
                 />
               </CardItem>
               <CardItem

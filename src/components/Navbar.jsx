@@ -16,17 +16,20 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
 
   useEffect(() => {
-    const handleShadow = () => {
-      if (window.scrollY > 20) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    };
-    window.addEventListener("scroll", handleShadow);
-  }, []);
+  const handleShadow = () => {
+    if (window.scrollY > 20) {
+      setShadow(true);
+    } else {
+      setShadow(false);
+    }
+  };
+  window.addEventListener("scroll", handleShadow);
+  
+  return () => {
+    window.removeEventListener("scroll", handleShadow);
+  };
+}, []);
 
-  console.log('window location: ', window.location.pathname);//Todo: remove this line
   
 
   return (

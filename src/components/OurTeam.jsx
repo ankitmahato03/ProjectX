@@ -12,14 +12,16 @@ const OurTeam = () => {
         </h2>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-center mx-auto">
           {teamData.ourTeams.map((item, _index) => (
-            <div 
-              key={_index} 
+            <div
+              key={_index}
               className="bg-[#F6EACB] hover:bg-[#F1D3CE] p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl max-w-xs mx-auto"
+              style={{ willChange: 'transform, box-shadow' }}  // Optimized for hover
             >
               <img
                 className="h-24 w-24 rounded-full mx-auto object-cover border-4 border-gray-300"
                 src={item.image}
                 alt={item.title}
+                loading='lazy'
               />
               <h3 className="mt-4 text-lg font-semibold text-gray-900 text-center">
                 {item.title}
